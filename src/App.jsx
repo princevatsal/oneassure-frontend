@@ -20,7 +20,7 @@ function App() {
   };
   const setAge = (age, id) =>
     setMemberList((old) =>
-      old.map((item) => (item.id == id ? { ...item, age: age } : item))
+      old.map((item) => (item.id === id ? { ...item, age: age } : item))
     );
 
   const handleSubmit = async (e) => {
